@@ -26,10 +26,10 @@ const Formulario = () => {
     <section className="formulario">
       <form onSubmit={aoSalvar}>
         <h2>Preencha os dados para criar o card do colaborador</h2>
-        <CampoTexto nome="Nome" placeholder="Digite seu nome" />
-        <CampoTexto nome="Cargo" placeholder="Digite seu cargo" />
-        <CampoTexto nome="Imagem" placeholder="Digite o endereço da imagem" />
-        <ListaSuspensa label="Time" itens={times}/>
+        <CampoTexto obrigatorio={true} nome="Nome" placeholder="Digite seu nome" />
+        <CampoTexto obrigatorio={true} nome="Cargo" placeholder="Digite seu cargo" />
+        <CampoTexto obrigatorio={true} nome="Imagem" placeholder="Digite o endereço da imagem" />
+        <ListaSuspensa obrigatorio={true} label="Time" itens={times}/>
         <Botao>Criar Card</Botao>
       </form>
     </section>
