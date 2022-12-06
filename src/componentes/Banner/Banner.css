@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+    background-color: #6278F7;
+    text-align: center;
+}
+
+.banner img {
+    max-width: 100%;
+}
