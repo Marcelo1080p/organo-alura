@@ -5,15 +5,6 @@ import ListaSuspensa from "../ListaSuspensa";
 import "./Formulario.css";
 
 const Formulario = (props) => {
-  const times = [
-    "Programação",
-    "Front-End",
-    "Data Science",
-    "DevOps",
-    "UX e Design",
-    "Mobile",
-    "Inovação e Gestão",
-  ];
 
   const [nome, setNome] = useState('');
   const [cargo, setCargo] = useState('');
@@ -58,7 +49,7 @@ const Formulario = (props) => {
           value={time} 
           obrigatorio={true} 
           label="Time" 
-          itens={times} 
+          itens={props.times} 
           aoAlterado={valor => setTime(valor)}
           />
         <Botao>Criar Card</Botao>
