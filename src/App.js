@@ -59,7 +59,8 @@ function App() {
       />
 
       {times.map((time) => (
-        <Time 
+        <Time
+          colaboradores={colaboradores}
           corPrimaria={time.corPrimaria}
           corSecundaria={time.corSecundaria}
           key={time.nome}
