@@ -60,11 +60,12 @@ function App() {
 
       {times.map((time) => (
         <Time
-          colaboradores={colaboradores}
           corPrimaria={time.corPrimaria}
           corSecundaria={time.corSecundaria}
           key={time.nome}
-          nome={time.nome} />
+          nome={time.nome} 
+          colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
+          />
       ))}
     </div>
   );
